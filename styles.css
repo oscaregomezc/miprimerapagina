@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    display:flex;
+    height: 100px;
+    background-color: gray;
+    justify-content:space-between;
+    align-items: center;
+}
+ul{
+    display:flex;
+    list-style: none;
+    gap: 2em;
+    margin-right: 20px;
+    color:white;
+    font-size: 20px;
+    
+
+}
+
+.seccion-1  {
+    display: inline-flex;
+    flex-wrap: row;  
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    padding:2em;
+    
+
+}
+
+#check{
+    display:none;
+}
+.checkbtn{
+    font-size: 25 px;
+    color: white ;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display:none;
+
+}
+
+.seccion-2{
+
+   background-image: url(../mi_primera_web/img/img-fondo.webp);
+   background-position: center;
+   width: 100%;
+   height: calc(100vh);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+
+.seccion-1 .acerca-de  {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    padding-right: 5%;
+ 
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+p{
+    font-size: 1.4em;
+}
+div header a i{
+    margin-left: 10px;
+    color:white;
+    font-size: 3em;
+        
+}
+
+.hobbies{
+    text-indent: 50px;
+}
+.card-container{
+    margin: 5px;
+    width: 95%;
+    display:flex;
+    justify-content: center;
+}
+
+h3{
+    color:white;
+}
+
+.container{
+    margin: 0px;
+    padding: 0%;
+    display:flex;
+    flex-wrap: wrap;
+    }
+
+    .card{
+      /*  border: 4px dotted teal ;
+        border-radius: 5%;*/
+        padding: 0px;
+        height: 400px;
+        max-width: 500px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .image-container{
+        border: 1 px dotted teal;
+        border-radius: 5%;
+        width: 80%;
+        height: 60%;
+    }
+
+    .imagen{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+
+    }
+
+          
+      .form-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+      
+        width: 80%;
+        margin: 10px auto;
+        padding: 50px;
+      }
+      
+      .form-header h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      
+      /* ------------- Formulario ------------- */
+      
+      .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+      
+        width: 80%;
+        padding: 50px;
+        margin: 30px 0 40px 0;
+      }
+    
+      /* ------------- Campos del Formulario ------------- */
+    
+    .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      
+      .form-row input[type="text"] ,
+      .form-row input[type="email"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      
+      .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+      }
+    
+      .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+      
+      
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+      
+      
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px;
+        resize: none;
+      
+      
+        width: 100%;
+      }
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row textarea {
+          width: 250px;
+        }
+    
+        .form-row button {
+            font-size: 16px;
+            font-weight: bold;
+          
+          
+            color: #ffffff;
+            background-color: #5995da;
+          
+          
+            border: none;
+            border-radius: 3px;
+          
+          
+            padding: 10px 40px;
+            cursor: pointer;
+          }
+          
+          
+          .form-row button:hover {
+            background-color: #76aeed;
+          }
+          
+          
+          .form-row button:active {
+            background-color: #407fc7;
+          }
+          
+          
+          /* ------------- Para Pantallas de más de 700px ------------- */
+          
+          
+          .form-row button {
+              margin-left: 120px;
+            
+          }      
+          
+    
+      /* ------------- Para Pantallas de más de 700px ------------- */
+    @media only screen and (min-width: 700px) {
+        .form-header {
+          padding: 50px;
+        }
+      
+        .form-row {
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+        .form-row input[type="text"] , .form-row input[type="email"] {
+          width: 250px;
+          height: initial;
+        }
+        .form-row label {
+          text-align: right;
+          width: 120px;
+          margin-top: 7px;
+          padding-right: 20px;
+        }
+      }
+
+    @media(max-width:768px){
+
+        div header a i{
+            margin-left: 10px;
+            color:#2c3e50;
+            font-size: 3em;
+                
+        }
+        header{
+            background-color: gray;
+
+        }
+        .seccion-1  {
+            flex-direction: column;
+        }
+        .acerca-imagen{
+            margin-bottom: 40 px;;
+        }
+        .checkbtn{
+            display:block;  
+        }
+        #encabezado ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #2c3e50;
+            text-align: center;
+            top:80px;
+            left:100%;
+            transition: all 0.5s;
+        }
+        #check:checked ~ ul{
+            left:0;
+            display: block;
+        }
+        #check:checked ~ .checkbtn{
+            background-color: #2c3e50;
+                   }
+        #encabezado nav ul li{
+            display:block;
+            margin: 50px 0;
+            line-height: 30px;
+
+        }
+
+        #encabezado nav ul li a{
+            font-size:20px;
+        }
+        .seccion-1 .acerca-de{
+            text-align: center;
+        }
+        .card-container{
+            width: 45%;
+        }
+       
+    
+    }
+    
+    @media(min-width:1024px){
+        .card-container{
+            width: 30%;
+        }
+        
+           
+    }
+
+    /* ------------- CSS Para el formulario ------------- */
+*
+  
