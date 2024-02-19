@@ -25,6 +25,13 @@ ul{
 
 }
 
+.greeting {
+    text-align: center;
+    font-size: 30px;
+    color:#2c3e50;
+
+}
+
 .seccion-1  {
     display: inline-flex;
     flex-wrap: row;  
@@ -346,5 +353,5 @@ h3{
     }
 
     /* ------------- CSS Para el formulario ------------- */
-*
+
   
